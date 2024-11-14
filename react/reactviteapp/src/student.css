@@ -1,0 +1,13 @@
+.icard{
+    background-color: red;
+    height: 300px;
+    width: 250px;
+    border: 8px solid black;
+    margin: 5px;
+    color: white;
+}
+
+.colspan{
+    color: black;
+    font-weight: bold;
+}
