@@ -2,6 +2,7 @@ import React from 'react';
 import Student from './student';
 import './student.css'
 import Usestudentstate from './Usestudentstate';
+import Imagemanipulation from './Imagemanipulation';
 
 function HelloWorld() {
   const h1 = <h1>Hello World!</h1>
@@ -39,7 +40,7 @@ function HelloWorld() {
     <div>
       <h2>Hello</h2>
     <div>
-      <Usestudentstate></Usestudentstate>
+      <Imagemanipulation></Imagemanipulation>
     </div>
     </div>
     // <div style={{backgroundColor : 'orange'}}>
