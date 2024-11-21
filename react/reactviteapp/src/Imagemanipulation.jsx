@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import dog from './dog.avif';
-import Math from 'react';
 
 function Imagemanipulation() {
     const [height, setHeight] = useState(100);
     const [width, setWidth] = useState(100);
     const [rotate, setRotate] = useState(0);
-    const [color , setColor] = useState('red');
+    const [color, setColor] = useState('red');
 
     function EnhancedHeigth() {
         setHeight(height + 30);
@@ -17,12 +16,11 @@ function Imagemanipulation() {
     }
 
     function Rotate() {
-        setRotate(rotate + 30); 
+        setRotate(rotate + 30);
     }
 
-    function Back()
-    {
-        const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    function Back() {
+        const randomColor = `#${Math.floor(Math.random() * 255)}`;
         setColor(randomColor);
     }
 
@@ -34,10 +32,12 @@ function Imagemanipulation() {
                 border: '2px solid red',
                 marginLeft: '40%',
                 marginRight: '46%',
-                paddingLeft: '20px',
-                paddingRight: '20px',
-                paddingTop: '100px',
                 backgroundColor: '#ccff66',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                flexDirection:'column',
+             
             }}
         >
             <div
@@ -47,7 +47,7 @@ function Imagemanipulation() {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    backgroundColor: {color}
+                    backgroundColor: color,
                 }}
             >
                 <img
@@ -55,8 +55,8 @@ function Imagemanipulation() {
                     height={height}
                     width={width}
                     style={{
-                        transform: `rotate(${rotate}deg)`, 
-                        transition: 'transform 0.5s', 
+                        transform: `rotate(${rotate}deg)`,
+                        transition: 'transform 0.5s',
                     }}
                     alt="dog image"
                 />
@@ -71,7 +71,7 @@ function Imagemanipulation() {
                 <button id="btn" onClick={Rotate}>
                     Rotate
                 </button>
-                <button id="btn" onClick={back}>
+                <button id="btn" onClick={Back}>
                     Change Background
                 </button>
             </div>
