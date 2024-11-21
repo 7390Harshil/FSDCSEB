@@ -5,7 +5,7 @@ function Imagemanipulation() {
     const [height, setHeight] = useState(100);
     const [width, setWidth] = useState(100);
     const [rotate, setRotate] = useState(0);
-    const [color, setColor] = useState('red');
+    const [color, setColor] = useState('palegoldenrod');
 
     function EnhancedHeigth() {
         setHeight(height + 30);
@@ -32,7 +32,7 @@ function Imagemanipulation() {
                 border: '2px solid red',
                 marginLeft: '40%',
                 marginRight: '46%',
-                backgroundColor: '#ccff66',
+                backgroundColor: 'paleturquoise',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',

@@ -3,6 +3,8 @@ import Student from './student';
 import './student.css'
 import Usestudentstate from './Usestudentstate';
 import Imagemanipulation from './Imagemanipulation';
+import MyUseEffect from '../MyUseEffect';
+import UseAPIFetch from './UseAPIFetch';
 
 function HelloWorld() {
   const h1 = <h1>Hello World!</h1>
@@ -40,7 +42,9 @@ function HelloWorld() {
     <div>
       <h2>Hello</h2>
     <div>
-      <Imagemanipulation></Imagemanipulation>
+      {/* <Imagemanipulation></Imagemanipulation> */}
+      {/* <MyUseEffect></MyUseEffect> */}
+      <UseAPIFetch></UseAPIFetch>
     </div>
     </div>
     // <div style={{backgroundColor : 'orange'}}>
