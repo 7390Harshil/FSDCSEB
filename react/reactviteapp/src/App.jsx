@@ -5,6 +5,8 @@ import Usestudentstate from './Usestudentstate';
 import Imagemanipulation from './Imagemanipulation';
 import MyUseEffect from '../MyUseEffect';
 import UseAPIFetch from './UseAPIFetch';
+import Login from './Login';
+import Registeration from './Registeration';
 
 function HelloWorld() {
   const h1 = <h1>Hello World!</h1>
@@ -44,7 +46,9 @@ function HelloWorld() {
     <div>
       {/* <Imagemanipulation></Imagemanipulation> */}
       {/* <MyUseEffect></MyUseEffect> */}
-      <UseAPIFetch></UseAPIFetch>
+      {/* <UseAPIFetch></UseAPIFetch> */}
+      {/* <Login></Login> */}
+      <Registeration></Registeration>
     </div>
     </div>
     // <div style={{backgroundColor : 'orange'}}>
