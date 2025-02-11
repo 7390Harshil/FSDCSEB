@@ -41,10 +41,10 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 function Login() {
   const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [password, setPassword] = useState('');                                                                           
 
   function showData(event) {
-    event.preventDefault(); // Prevents the default form submission behavior
+    event.preventDefault();
     alert(`Email: ${email}\nPassword: ${password}`);
   }
 
